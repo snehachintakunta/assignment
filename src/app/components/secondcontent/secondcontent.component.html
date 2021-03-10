@@ -1,0 +1,20 @@
+<div class="container">
+  <h2 class="list-header">Second Content List</h2>
+  <hr />
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>UserName</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let data of contentList.slice(0, 8)">
+      <tr>
+        <td class="primary-color">{{data.id}}</td>
+        <td class="text-uppercase primary-color">{{data.username}}</td>
+        <td>{{data.email}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
